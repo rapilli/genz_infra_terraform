@@ -1,31 +1,23 @@
 variable "aws_access_key" {
   description = "AWS Access Key"
   type        = string
+  default     = "AKIAR762QMAE26XSNYHI"
 }
 
 variable "aws_secret_key" {
   description = "AWS Secret Access Key"
   type        = string
+  default     = "d02/MovSk9IHr8/DLlUAUwYa66rYTIuTrdWJyl6I"
 }
 
-variable "aws_region" {
-  description = "AWS Region"
+variable "ami" {
+  description = "Amazon Machine Image ID"
   type        = string
-  default     = "us-west-2"
+  default     = "ami-0103f211a154d64a6"
 }
 
-variable "ec2_ami" {
-  description = "EC2 AMI ID"
-  type        = string
-}
-
-variable "ec2_instance_type" {
+variable "instance_type" {
   description = "EC2 Instance Type"
   type        = string
   default     = "t2.micro"
-}
-
-variable "ec2_key_pair" {
-  description = "EC2 Key Pair Name"
-  type        = string
 }
