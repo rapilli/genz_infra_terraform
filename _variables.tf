@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "AWS region where RDS will be created."
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "db_identifier" {
